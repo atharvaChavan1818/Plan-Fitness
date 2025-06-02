@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthyLife Hospital</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #0077b6;
+            padding: 1rem;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header {
+            background: url('https://images.unsplash.com/photo-1588776814546-ec7e7e6a67e3?fit=crop&w=1950&q=80') no-repeat center center/cover;
+            height: 400px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .container {
+            padding: 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            color: #0077b6;
+        }
+
+        .services, .login, .about-contact {
+            margin-bottom: 3rem;
+        }
+
+        .services-list {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .service {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 1rem;
+            width: 300px;
+            text-align: center;
+        }
+
+        .service img {
+            width: 100%;
+            border-radius: 8px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .login form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .login input[type="text"], .login input[type="password"] {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+        }
+
+        .login button {
+            padding: 0.5rem 1rem;
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #023e8a;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer div {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">HealthyLife Hospital</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Welcome to HealthyLife Hospital</h1>
+    </header>
+
+    <div class="container">
+
+        <section id="services" class="services">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-list">
+                <div class="service">
+                    <img src="https://www.shutterstock.com/image-vector/green-hospital-building-modern-sustainable-260nw-2517328331.jpg" alt="Emergency">
+                    <h3>24/7 Emergency</h3>
+                    <p>We provide round-the-clock emergency services with trained professionals.</p>
+                </div>
+                <div class="service">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCFg-6ByXFn0U9WuB2rJyV6blLvLqoxtk-Sg&s
+                    " alt="Cardiology">
+                    <h3>Cardiology</h3>
+                    <p>Expert heart care and diagnostics using the latest technologies.</p>
+                </div>
+                <div class="service">
+                    <img src="https://images.unsplash.com/photo-1588776814474-99e0891e5e30?fit=crop&w=800&q=60" alt="Lab Tests">
+                    <h3>Laboratory</h3>
+                    <p>Advanced lab testing with accurate and fast results.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="login" class="login">
+            <h2 class="section-title">Login</h2>
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <section id="about" class="about-contact">
+            <h2 class="section-title">About Us</h2>
+            <p style="text-align:center; max-width:700px; margin: 0 auto;">
+                HealthyLife Hospital is committed to providing the best healthcare services to our community. With expert doctors, modern facilities, and a patient-first approach, we aim to deliver care you can trust.
+            </p>
+        </section>
+
+        <section id="contact" class="about-contact">
+            <h2 class="section-title">Contact Us</h2>
+            <p style="text-align:center; max-width:700px; margin: 0 auto;">
+                Email: contact@healthylifehospital.com<br>
+                Phone: +91 98765 43210<br>
+                Address: 123, Wellness Street, City, India
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <div>&copy; 2025 HealthyLife Hospital. All rights reserved.</div>
+    </footer>
+
+</body>
+</html>
